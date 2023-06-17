@@ -1,0 +1,125 @@
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.input__group {
+    position: relative;
+}
+
+.input__box {
+    width: 70%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 25px;
+    letter-spacing: 1;
+    margin-right: 10px;
+}
+
+.input__group span {
+    position: absolute;
+    left: 5px;
+    bottom: 1px;
+    padding: 10px 0 5px;
+    color: rgb(255, 255, 255, .5);
+    text-transform: uppercase;
+    pointer-events: none;
+    letter-spacing: 0.1em;
+}
+
+.input__group input:valid~span,
+.input__group input:focus~span {
+
+    transform: translateY(-30px);
+    font-size: 10px;
+}
+
+.input__group i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.input__group i::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: #fff;
+}
+
+
+
+/* 
+.input__box {
+    width: 70%;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none;
+    margin-right: 5px;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input__box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+} */
+
+.input_submit {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.input_submit:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+
+.input_submit:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+}
+
+.input_submit:hover {
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
